@@ -19,8 +19,7 @@ module Monologue
     initializer 'monologue.assets.precompile' do |app|
       app.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
       app.config.assets.precompile += %w[
-        monologue/admin/ckeditor-config.js
-        ckeditor/*
+        ckeditor/config.js
         *.eot* *.woff *.ttf
       ]
     end
